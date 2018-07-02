@@ -16,9 +16,17 @@ Instalacja i uruchamianie:
 4. Stworzenie bazy danych:
 	
 	$ $VENV/bin/initialize_kursy_db development.ini
-5. Uruchomienie aplikacji:
+5. Uruchomienie testów:
+	
+	$ py.test tutorial/tests.py -q
+6. Uruchomienie aplikacji:
 	
 	$ $VENV/bin/pserve development.ini
+
+7. Pobranie i wyświetlenie aktualnych kursów walut następuje po kliknięciu linku "Pobierz aktualne kursy walut"
+
+8. Wyczyszczenie bazy danych następuje po kliknięciu linku "Wyczyść bazę danych"
+
 
 Instalacja za pomocą PyPI https://test.pypi.org/project/kursy/
 
@@ -28,8 +36,3 @@ Instalacja za pomocą PyPI https://test.pypi.org/project/kursy/
 2. Instalacja za pomocą pip:
 
 	$ mkvirtualenv python -m pip install --index-url https://test.pypi.org/simple/ kursy
-3. Sprawdzenie poprawności instalacji:
-	$ python
-	>>> import kursy
-	>>> kursy.name
-	'kursy'
