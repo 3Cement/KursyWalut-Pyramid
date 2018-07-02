@@ -1,2 +1,3 @@
-# KursyWalut-Pyramid
-Program synchronizujący kursy walut ze strony NBP
+# Kursy Walut - Pyramid
+
+Jest to program synchronizujący aktualne kursy walut ze strony NBP.

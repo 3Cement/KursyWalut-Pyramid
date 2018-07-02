@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aktualne Kursy Walut</title>
+</head>
+<body>
+<h1>Aktualne Kursy Walut</h1>
+<a href="${request.route_url('get_values')}">Pobierz aktualne kursy walut</a>
+<br/>
+<a href="${request.route_url('clean_database')}">Wyczyść bazę danych</a>
+<br/>
+<ol tal:condition="exists:waluty">
+	<p>Czas pobrania danych: ${czas}</p>
+</ol>
+</body>
+</html>

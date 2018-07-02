@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = kursy:main
+      [console_scripts]
+      initialize_kursy_db = kursy.initialize_db:main
+      
