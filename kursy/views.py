@@ -38,11 +38,3 @@ class WalutyViews(object):
         DBSession.query(Waluta).delete()
         print('All Currencies deleted')
         return dict(title='Waluty View')
-
-def walutypage_create():
-    with transaction.manager:
-        new_currency = Waluta(code='KOD5', name='Waluta1', price='1,11')
-        DBSession.add(new_currency)
-        print(new_currency.name+' created!')
-        waluty = DBSession.query(Waluta).order_by(Waluta.uid)
-        return dict(title='Waluty View', waluty=waluty, czas=czas)
