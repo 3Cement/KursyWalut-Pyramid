@@ -1,5 +1,7 @@
-      [paste.app_factory]
-      main = kursy:main
-      [console_scripts]
-      initialize_kursy_db = kursy.initialize_db:main
-      
+[console_scripts]
+initialize_kursy_db = kursy.initialize_db:main
+kursy_run = pyramid.scripts.pserve:main
+
+[paste.app_factory]
+main = kursy:main
+

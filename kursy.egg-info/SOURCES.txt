@@ -1,10 +1,13 @@
+MANIFEST.in
 README.md
 setup.py
 kursy/__init__.py
+kursy/clean_database.pt
 kursy/initialize_db.py
 kursy/models.py
 kursy/tests.py
 kursy/views.py
+kursy/waluty_view.pt
 kursy.egg-info/PKG-INFO
 kursy.egg-info/SOURCES.txt
 kursy.egg-info/dependency_links.txt

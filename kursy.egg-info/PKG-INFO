@@ -1,9 +1,10 @@
 Metadata-Version: 2.1
 Name: kursy
-Version: 0.0.1
+Version: 0.0.2
 Summary: A small program that synchronizes current currency prices
 Home-page: https://github.com/3Cement/KursyWalut-Pyramid
 Author: Daniel Milewski
+Author-email: danielmilewski123@gmail.com
 License: UNKNOWN
 Description: # Kursy Walut - Pyramid
         

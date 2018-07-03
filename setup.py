@@ -16,9 +16,9 @@ requires = [
 ]
 
 setup(name='kursy',
-      version="0.0.1",
+      version="0.0.2",
       author="Daniel Milewski",
-      uthor_email="danielmilewski123@gmail.com",
+      author_email="danielmilewski123@gmail.com",
       description="A small program that synchronizes current currency prices",
       install_requires=requires,
       long_description=long_description,
@@ -30,10 +30,14 @@ setup(name='kursy',
       "License :: OSI Approved :: MIT License",
       "Operating System :: OS Independent",
       ),
-      entry_points="""\
-      [paste.app_factory]
-      main = kursy:main
-      [console_scripts]
-      initialize_kursy_db = kursy.initialize_db:main
-      """,
+      entry_points={
+        'paste.app_factory': [
+            'main = kursy:main',
+        ],
+        'console_scripts': [
+            'initialize_kursy_db = kursy.initialize_db:main',
+            'kursy_run = pyramid.scripts.pserve:main',
+        ]
+    },
+      include_package_data=True,
 )
