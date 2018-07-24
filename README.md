@@ -15,7 +15,7 @@ What things you need to install the software and how to install them
 2. Clone this repository
 3. Install requirements
 4. Initialize database
-5. Run mylibrary app
+5. Run app
 ```
 
 ### Installing and deployment with clone repository:
